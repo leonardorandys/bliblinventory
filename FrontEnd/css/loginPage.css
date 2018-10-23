@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+}
+
+body{
+    background: url(../Images/backgroundLoginPage.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img#logo{
+    height: 75px;
+    margin: 5px;
+}
+
+p#instructions{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fefefe;
+    text-align: center;
+}
+
+input#inputUsername, input#inputPassword{
+    width: 700px;
+    height: 70px;
+    opacity: 0.8;
+    border-radius: 60px;
+    font-size: 25px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+a#lupaPassword{
+    color: white;
+    text-decoration: underline;
+    font-size: 25px;
+    text-align: left;
+}
+
+button#btnLogin{
+    width: 260px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 41px;
+    border: solid 2px #ffffff;
+    background-color: #0095da;  
+}
