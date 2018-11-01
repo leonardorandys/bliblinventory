@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="text/css" rel="stylesheet" href="../css/homePageEmployee.css""/>
+    <link type="text/css" rel="stylesheet" href="../css/header.css""/>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../js/homePageEmployee.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <title>Home Page</title>
+    <title>Daftar Produk</title>
 
     <!-- kebutuhan utk maerialize-->
     <!--Import Google Icon Font-->
@@ -21,29 +22,158 @@
     <!-- --------------------- -->
 </head>
 <body>
-    <header>
-        <nav class="nav-wrapper">
-            <nav>
-                <div class="nav-wrapper">
-                    <img class="brand-logo" id="imgLogo" src="../images/logoBliblinventory.jpg"/>
-                    <ul class="right hide-on-med-and-down">
-                        <li><input type="text" id="inputSearch" placeholder="Ketik produk yang Anda cari"/></li>
-                        <li><i class="material-icons right" id="iconSearch" style="font-size: 35px;">search</i></li>
-                        <li><img class="circle responsive-img" id="imgPerson" src="../images/iconPerson.png"/></li>
-                        <li><a class="dropdown-trigger" data-target="menuDropdownEmployee"><i class="material-icons" id="iconMenu">menu</i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </nav>
+    <!-- meng-iinclude header (lewat file jquery-nya) -->
+    <header id="includeHeaderWithSearchBox"></header>
 
-        <!-- utk menu drop down nya -->
-        <ul id="menuDropdownEmployee" class="dropdown-content">
-            <li><a href="#!">Daftar produk inventaris</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">Daftar Permintaan Peminjaan saya</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">Buat Permintaan Peminjaman secara Manual</a></li>
-        </ul>
-    </header>
+    <article>
+        <div id="forSearching"> 
+            <div class="row" id="sortingElement">
+                <div class="input-field col s2" style="margin: 0px">
+                    <i class="material-icons prefix" id="iconSorting">sort</i>
+                    <label for="icon_prefix" id="lblSorting">Urutkan berdasar</label>
+                    <div class="styledSelect">
+                        <select id="slctSorting">
+                            <option value="nama">nama</option>
+                            <option value="kodeProduk">kode produk</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
+            <div class="row" id="categoriesElement">
+                <div class="input-field col s2" style="margin: 0px">
+                    <i class="material-icons prefix" id="iconCategories">dashboard</i>
+                    <label for="icon_prefix" id="lblCategories">Kategori</label>
+                    <div class="styledSelect">
+                        <select id="slctCategories">
+                            <option value="semua">semua</option>
+                            <option value="elektronik">elektronik</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="daftarProduk">
+            <div class="col s1 s2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/samsungTab.png">
+                    </div>
+                    <div class="card-content">
+                        <p class="kodeProduk">TBL0002</p>
+                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Detail</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s1 s2">
+                <div class="card">
+                <div class="card-image">
+                    <img src="../images/samsungTab.png">
+                </div>
+                <div class="card-content">
+                    <p class="kodeProduk">TBL0002</p>
+                    <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Detail</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col s1 s2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/samsungTab.png">
+                    </div>
+                    <div class="card-content">
+                        <p class="kodeProduk">TBL0002</p>
+                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Detail</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s1 s2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/samsungTab.png">
+                    </div>
+                    <div class="card-content">
+                        <p class="kodeProduk">TBL0002</p>
+                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s1 s2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/samsungTab.png">
+                    </div>
+                    <div class="card-content">
+                        <p class="kodeProduk">TBL0002</p>
+                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Detail</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s1 s2">
+                <div class="card">
+                <div class="card-image">
+                    <img src="../images/samsungTab.png">
+                </div>
+                <div class="card-content">
+                    <p class="kodeProduk">TBL0002</p>
+                    <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Detail</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col s1 s2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/samsungTab.png">
+                    </div>
+                    <div class="card-content">
+                        <p class="kodeProduk">TBL0002</p>
+                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Detail</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s1 s2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/samsungTab.png">
+                    </div>
+                    <div class="card-content">
+                        <p class="kodeProduk">TBL0002</p>
+                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 </body>
 </html>
