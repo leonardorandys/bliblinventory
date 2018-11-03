@@ -1,7 +1,6 @@
 package com.sal.bliblinventory.model;
 
 import com.sal.bliblinventory.model.audit.DateAudit;
-import lombok.Data;
 import org.hibernate.annotations.NaturalId;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -12,7 +11,6 @@ import java.util.Set;
 
 @Entity
 @Table(name = "users")
-@Data
 public class User extends DateAudit {
 
     @Id
@@ -21,6 +19,9 @@ public class User extends DateAudit {
 
     @NotBlank
     private String name;
+
+    @NotBlank
+    private String username;
 
     @NaturalId
     @NotBlank
@@ -41,4 +42,63 @@ public class User extends DateAudit {
     @JoinColumn(name = "superiorId")
     private User superior;
 
+    public User() {
+
+    }
+
+    public User(String name, String username, String email, String password) {
+        this.name = name;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
 }
+
