@@ -10,11 +10,13 @@ article{
 div.whiteBoard{
     background-color: white;
     margin: 15px;
+    padding-top: 15px;
     height: 100%;
 }
 
 .iconBack{
     font-size: 50px;
+    padding: 1vh;
 }
 
 .judulPage{
@@ -54,7 +56,7 @@ table#formPeminjamanProduk td.tdInfoData input, table#formPeminjamanProduk td.td
     border-radius: 5px;
 }
 
-table#formPeminjamanProduk td.tdInfoData textarea{
+table#formPeminjamanProduk td.tdInfoData textarea#long{
     height: 80px;
 }
 

@@ -1,13 +1,13 @@
 <script>
 	$(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
 	$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+		$('.sidenav').sidenav();
+	});
 </script>
 
 <nav>
 	<div class="nav-wrapper">
-		<img class="brand-logo" id="imgLogo" src="../../images/logo2.png"/>
+    <a href="homePageEmployee.html"><img class="brand-logo" id="imgLogo" src="../../images/logo2.png"/></a>
 		<a data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		<ul class="right hide-on-med-and-down">
 			<li><input type="text" id="inputSearch" placeholder="Ketik produk yang Anda cari"/></li>
@@ -19,18 +19,22 @@
 </nav>
 
 <ul class="sidenav" id="mobile">
-	<li><a href="#!">Daftar produk inventaris</a></li>
+	<li><a href="homePageEmployee.html">Daftar produk inventaris</a></li>
 	<li class="divider"></li>
-    <li><a href="#!">Daftar Permintaan Peminjaan saya</a></li>
-    <li class="divider"></li>
-	<li><a href="#!">Buat Permintaan Peminjaman secara Manual</a></li>
+	<li><a href="orderListEmployee.html">Daftar Permintaan Peminjaan saya</a></li>
+	<li class="divider"></li>
+	<li><a href="buatPermintaanPeminjamanManualEmployee.html">Buat Permintaan Peminjaman secara Manual</a></li>
+	<li class="divider"></li>
+  <li><a href="../LoginPage.html">Logout</a></li>
 </ul>
 
 <!-- utk menu drop down nya -->
 <ul id="menuDropdownEmployee" class="dropdown-content">
-	<li><a href="#!">Daftar produk inventaris</a></li>
+	<li><a href="homePageEmployee.html">Daftar produk inventaris</a></li>
 	<li class="divider"></li>
-    <li><a href="#!">Daftar Permintaan Peminjaan saya</a></li>
-    <li class="divider"></li>
-	<li><a href="#!">Buat Permintaan Peminjaman secara Manual</a></li>
+	<li><a href="orderListEmployee.html">Daftar Permintaan Peminjaan saya</a></li>
+	<li class="divider"></li>
+	<li><a href="buatPermintaanPeminjamanManualEmployee.html">Buat Permintaan Peminjaman secara Manual</a></li>
+	<li class="divider"></li>
+  <li><a href="../LoginPage.html">Logout</a></li>
 </ul>
