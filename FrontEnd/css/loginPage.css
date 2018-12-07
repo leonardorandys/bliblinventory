@@ -1,55 +1,64 @@
-body, html {
-    height: 100%;
-}
-
 body{
+    margin: 0px;
     background: url(../Images/backgroundLoginPage.jpg) no-repeat center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 img#logo{
-    width: 900px;
-    margin: calc( (100vh - 255px) / 2 ) auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+    .logo {
+        height: 45vh;
+    }
+
+    .framing {
+        margin: 0 3vw 0 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .framing {
+        margin: 0 2vw 0 2vw;
+    }
 }
 
 .logo{
-    height: 100%;
-    width: 70%;
-    float: left;
-
+    display: flex;
+    align-items: center;
 }
 
-.form-login{
-    height: 100%;
-    width: 30%;
-    padding: 5px;
-    float: left;
-    padding: 0px 10px;
+.framing{
+    height: 50vh;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 p.instructions{
-    padding-top: 50px;
-    font-size: 30px;
-    margin-bottom: 90px;
+    font-size: 4vh;
+
 }
 
 input#inputUsername, input#inputPassword{
-    width: 95%;
-    height: 50px;
+    width: 90%;
     opacity: 0.8;
     border: 2px solid #f2f2f2;
     border-radius: 60px;
-    font-size: 25px;
+    font-size: 3vh;
     background-color: #ffffff;
     text-align: center;
 }
 
 input::-webkit-input-placeholder {
-    font-size: 25px;
+    font-size: 3vh;
 }
 
 input#inputUsername:focus, input#inputPassword:focus{
@@ -58,27 +67,19 @@ input#inputUsername:focus, input#inputPassword:focus{
 
 a#lupaPassword{
     color: #0095da;
-    font-size: 18px;
-    text-align: left;
-}
-
-.framing{
-    margin: calc((100vh - 501px) / 2) auto;
-    background: white;
-    height: 80%;
-    border-radius: 20px;
 }
 
 button#btnLogin{
-    width: 260px;
-    height: 50px;
-    font-size: 25px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    width: 50%;
+    height: 12%;
     font-weight: bold;
     color: white;
+    font-size: 2.5vh;
     border-radius: 41px;
     border: solid 2px #ffffff;
     background-color: #0095da;  
-    vertical-align: middle;
 }
 
 button#btnLogin:hover{

@@ -1,6 +1,9 @@
 header{
     height: 10%;
     margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 header nav{
@@ -12,7 +15,6 @@ header nav a{
     color: #0095da;
 }
 header nav img#imgLogo{
-    margin-top: 5px;
     width: 220px;
 }
 
@@ -29,13 +31,14 @@ header nav #imgPerson{
     width: 47px;
     background-color: #0095da;
     margin-top: 10px;
-    margin-left: 250px;
+    margin-left: 20vw;
 }
 
 header nav #inputSearch{
     border: 2px solid #0095da;
+    padding-left: 15px;
     border-radius: 20px;
-    width: 500px;
+    width: 30vw;
 }
 
 #iconMenu{
