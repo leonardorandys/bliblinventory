@@ -3,14 +3,19 @@ html, body{
     height: 100%;
 }
 
-article{
-    height: auto;
+.fadeBackground{
+    padding-top: 76px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-div.whiteBoard{
+#whiteBoardFormPinjam{
     background-color: white;
-    margin: 15px;
-    height: 100%;
+    margin: 18px;
+    height: 80vh;
+    width: 80vw;
+    margin-left: 10vw;
 }
 
 .iconBack{
@@ -33,8 +38,8 @@ button.btnBlue{
 }
 
 table#formPeminjamanProduk{
-    margin: 20px 10px 20px 40px;
-    font-size: 18px;
+    margin: 20px 50px;
+    font-size: 16px;
     width: inherit;
 }
 
@@ -46,9 +51,6 @@ table#formPeminjamanProduk td.tdInfoData, table#formPeminjamanProduk td.tdInfoDa
     font-weight: bold;
 }
 
-table#formPeminjamanProduk #gambarProduk{
-    width: 250px;
-}
 
 table#formPeminjamanProduk td.tdInfoData input, table#formPeminjamanProduk td.tdInfoData textarea{
     border: 2px solid #0095da;
@@ -57,6 +59,7 @@ table#formPeminjamanProduk td.tdInfoData input, table#formPeminjamanProduk td.td
 
 table#formPeminjamanProduk td.tdInfoData textarea{
     height: 80px;
+    width: 500px;
 }
 
 button#btnKirim{

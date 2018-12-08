@@ -22,12 +22,11 @@
 </head>
 <body>
 		<!-- meng-iinclude header (lewat file jquery-nya) -->
-	<header id="includeHeaderWithSearchBox"></header>
-	<div id="space" style="height:65px;" ></div>
-	<article>
-		<div class="whiteBoard row">
-				<a href="homePageEmployee.html"><i class="material-icons iconBack" style="font-size: 50px">arrow_back</i></a>
-			<h3 class="center-align judulPage">Detail Produk</h3>
+		<a href="#"><i class="material-icons" id="backToDetail" style="font-size: 50px">arrow_back</i></a>
+		<a href="#"><button class="btnBlue z-depth-2" id="btnPinjam">Pinjam Produk Ini</button></a>
+		<div id="includeFormPinjam"></div>
+		<article class="fadeBackground valign-wraper">
+		<div class="z-depth-2 row valign-wrapper" id="whiteBoardDetail">
 			<div class="center-align col l4 m4 s12">
 			  <img src="../../images/samsungTab.png" id="imgProduk"/>
 			</div>
@@ -57,7 +56,6 @@
 						</td>
 					</tr>
 				</table>
-				<a href="buatPermintaanPeminjamanEmployee.html"><button class="btnBlue" id="btnPinjam">Pinjam produk ini</button></a>
 			</div>
 		</div>
 	</article>

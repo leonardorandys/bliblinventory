@@ -11,6 +11,15 @@ html {
   background: #FF0000;
 }
 
+#closeDetailProduk{
+  font-size: 45pt;
+  color: black;
+  z-index: 2;
+  margin-left: 9.5vw;
+  position: fixed;
+  margin-top: 10px;
+}
+
 body{
   background-color: #0095da;
 }
