@@ -1,0 +1,62 @@
+<script>
+	$(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
+	$(document).ready(function(){
+		$('.sidenav').sidenav();
+	});
+</script>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="homePageAdmin.html"><img class="brand-logo" id="imgLogo" src="../../images/logo2.png"/></a>
+		<a data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		<ul class="right hide-on-med-and-down">
+			<li><img class="circle responsive-img" id="imgPerson" src="../../images/iconPerson.png"/></li>
+			<li><a class="dropdown-trigger" data-target="menuDropdownAdmin"><i class="material-icons" id="iconMenu">menu</i></a></li>
+		</ul>
+	</div>
+</nav>
+
+<ul class="sidenav" id="mobile">
+    <li><a href="homePageAdmin.html">Daftar produk inventaris</a></li>
+    <li class="divider"></li>
+    <li><a href="tambahProdukAdmin.html">Tambah Produk Inventaris</a></li>
+    <li class="divider"></li>
+    <li><a href="tambahProdukBatchAdmin.html">Tambah Produk secara Batch</a></li>
+    <li class="divider"></li>
+	  <li><a href="pemgembalianProdukAdmin.html">Pengembalian Produk Inventaris</a></li>
+    <li class="divider"></li>
+	  <li><a href="permintaanPembelianAdmin.html">Buat Permintaan Pembelian Produk Inventaris</a></li>
+    <li class="divider"></li>
+	  <li><a href="daftarKaryawanAdmin.html">Daftar Karyawan</a></li>
+    <li class="divider"></li>
+	  <li><a href="tambahKaryawanAdmin.html">Tambah Karyawan</a></li>
+    <li class="divider"></li>
+	  <li><a href="daftarPermintaanKaryawanAdmin.html">Daftar Permintaan Peminjaman Karyawan</a></li>
+    <li class="divider"></li>
+	  <li><a href="backupRestoreAdmin.html">Backup dan Restore</a></li>
+    <li class="divider"></li>
+    <li><a href="../loginPage.html">Logout</a></li>
+  </ul>
+  
+  <!-- utk menu drop down nya -->
+  <ul id="menuDropdownAdmin" class="dropdown-content">
+    <li><a href="homePageAdmin.html">Daftar produk inventaris</a></li>
+    <li class="divider"></li>
+    <li><a href="tambahProdukAdmin.html">Tambah Produk Inventaris</a></li>
+    <li class="divider"></li>
+    <li><a href="tambahProdukBatchAdmin.html">Tambah Produk secara Batch</a></li>
+    <li class="divider"></li>
+	  <li><a href="pemgembalianProdukAdmin.html">Pengembalian Produk Inventaris</a></li>
+    <li class="divider"></li>
+	  <li><a href="permintaanPembelianAdmin.html">Buat Permintaan Pembelian Produk Inventaris</a></li>
+    <li class="divider"></li>
+	  <li><a href="daftarKaryawanAdmin.html">Daftar Karyawan</a></li>
+    <li class="divider"></li>
+	  <li><a href="tambahKaryawanAdmin.html">Tambah Karyawan</a></li>
+    <li class="divider"></li>
+	  <li><a href="daftarPermintaanKaryawanAdmin.html">Daftar Permintaan Peminjaman Karyawan</a></li>
+    <li class="divider"></li>
+	  <li><a href="backupRestoreAdmin.html">Backup dan Restore</a></li>
+    <li class="divider"></li>
+    <li><a href="../loginPage.html">Logout</a></li>
+  </ul>

@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link type="text/css" rel="stylesheet" href="../../css/employee/detailProdukEmployee.css">
+	<link type="text/css" rel="stylesheet" href="../../css/admin/detailProdukAdmin.css">
 	<link type="text/css" rel="stylesheet" href="../../css/header.css">
 	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="../../js/employee/detailProdukEmployee.js"></script>
+	<script type="text/javascript" src="../../js/admin/detailProdukAdmin.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<title>Detail Produk</title>
 	<!-- kebutuhan utk maerialize-->
@@ -22,11 +22,12 @@
 </head>
 <body>
 		<!-- meng-iinclude header (lewat file jquery-nya) -->
-		<a href="#"><i class="material-icons" id="backToDetail" style="font-size: 50px">arrow_back</i></a>
-		<a href="#"><button class="btnBlue z-depth-2" id="btnPinjam">Pinjam Produk Ini</button></a>
-		<div id="includeFormPinjam"></div>
-		<article class="fadeBackground valign-wraper">
-		<div class="z-depth-2 row valign-wrapper" id="whiteBoardDetail">
+	<header id="includeHeaderWithSearchBox"></header>
+	<div id="space" style="height:65px;" ></div>
+	<article>
+		<div class="whiteBoard row">
+				<a href="homePageEmployee.html"><i class="material-icons iconBack" style="font-size: 50px">arrow_back</i></a>
+			<h3 class="center-align judulPage">Detail Produk</h3>
 			<div class="center-align col l4 m4 s12">
 			  <img src="../../images/samsungTab.png" id="imgProduk"/>
 			</div>
@@ -55,6 +56,31 @@
 							6000 Standard Battery Capacity (mAh)
 						</td>
 					</tr>
+				</table>
+			</div>
+			<div class="col s12 responsive-table" id="tabelPeminjam">
+				<table>
+					<thead>
+						<tr>
+							<th>ID Satuan</th>
+							<th>Status</th>
+							<th>Nama Peminjam</th>
+							<th>Tanggal Pinjam</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST0030001</td>
+							<td>Dipinjam</td>
+							<td>Joko</td>
+							<td>4 Desember 2018</td>
+							<td class="right-align">
+								<button><i class="material-icons prefix">edit</i></button>
+								<button><i class="material-icons prefix">delete</i></button>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</div>
