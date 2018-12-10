@@ -12,12 +12,11 @@ html {
 }
 
 #closeDetailProduk{
-  font-size: 45pt;
-  color: black;
+  font-size: 50px;
   z-index: 2;
-  margin-left: 9.5vw;
+  margin-left: 9.8vw;
   position: fixed;
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 body{
@@ -25,71 +24,50 @@ body{
 }
 
 .styledSelect {
-  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
   height: 29px;
   overflow: hidden;
   background-color: white;
-  margin-left: 170px; 
+  margin-left: 160px; 
   margin-top: 9px;
   border-radius: 5px; 
-  width: 150px;
+  width: 100px;
   background-color: #ffffff; 
   padding: 0px;
 }
 
-#inputSearch{
-}
-
 .styledSelect select {
-   display: block;
+  display: block;
   background: transparent;
   border: none;
   font-size: 14px;
   height: 29px;
   padding: 3px; /* If you add too much padding here, the options won't show in IE */
-  width: 200px;
+  width: 100px;
 }
 
-article div#forSearching div#sortingElement, article div#forSearching div#categoriesElement{
+div#forSearching div#sortingElement, div#forSearching div#categoriesElement{
   margin-bottom: 0px;
   height: 40px;
   width: 380px;
+}
+
+#clickDetail{
+  color: #0095da;
 }
 
 #forSearching{
   background-color: #0095da;
 }
 
-article div#forSearching div#searchingElement #iconSearching{
+ div#forSearching div#searchingElement #iconSearching, div#forSearching div#sortingElement #iconSorting, div#forSearching div#categoriesElement #iconCategories{
   color: white;
 }
 
-article div#forSearching div#searchingElement #lblSearching{
+ div#forSearching div#searchingElement #lblSearching, div#forSearching div#sortingElement #lblSorting, div#forSearching div#categoriesElement #lblCategories{
   color: white; 
   width: 200px;
   margin-left: 35px;
 }
-
-article div#forSearching div#sortingElement #iconSorting{
-  color: white;
-}
-
-article div#forSearching div#sortingElement #lblSorting{
-  color: white; 
-  width: 200px;
-  margin-left: 35px;
-}
-
-article div#forSearching div#categoriesElement #iconCategories{
-  color: white;
-}
-
-article div#forSearching div#categoriesElement #lblCategories{
-  color: white; 
-  width: 200px;
-  margin-left: 35px;
-}
-
 article div#daftarProduk{
   margin-top: 0;
 }
