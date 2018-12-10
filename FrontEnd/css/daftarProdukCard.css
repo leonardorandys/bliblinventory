@@ -12,12 +12,11 @@ html {
 }
 
 #closeDetailProduk{
-  font-size: 45pt;
-  color: black;
+  font-size: 50px;
   z-index: 2;
-  margin-left: 9.5vw;
+  margin-left: 9.8vw;
   position: fixed;
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 body{
@@ -54,6 +53,10 @@ article div#forSearching div#sortingElement, article div#forSearching div#catego
   margin-bottom: 0px;
   height: 40px;
   width: 380px;
+}
+
+#clickDetail{
+  color: #0095da;
 }
 
 #forSearching{

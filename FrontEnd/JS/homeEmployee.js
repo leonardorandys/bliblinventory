@@ -1,10 +1,9 @@
 $( document ).ready(function() {
   $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
   $('.sidenav').sidenav();
-  $("#includeHeaderWithSearchBox").load("header/headerWithSearchBoxEmployee.html"); 
-  $("#includeHomePageEmployee").load("homePageEmployee.html"); 
-  $("#includeOrderList").load("orderListEmployee.html"); 
-  $("#includeManualOrder").load("buatPermintaanPeminjamanManualEmployee.html"); 
+  $("#includeHomePageEmployee").load("daftarProdukCard.html"); 
+  $("#includeOrderList").load("orderList.html"); 
+  $("#includeManualOrder").load("buatPermintaanPeminjamanManual.html"); 
   $("#includeOrderList").hide();
   $("#includeManualOrder").hide();
   
@@ -26,4 +25,9 @@ $( document ).ready(function() {
     $("#includeManualOrder").fadeIn();
   });
 
+  $("#imgLogo").click(function(){
+    $("#includeHomePageEmployee").fadeIn();
+    $("#includeOrderList").fadeOut();
+    $("#includeManualOrder").fadeOut();
+  });
 });
