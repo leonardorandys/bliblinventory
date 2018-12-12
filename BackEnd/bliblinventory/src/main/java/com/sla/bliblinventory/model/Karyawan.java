@@ -26,6 +26,12 @@ public class Karyawan {
         this.password = karyawan.getPassword();
     }
 
+    public Karyawan(String id, String nama, String password){
+        this.id = id;
+        this.nama = nama;
+        this.password = password;
+    }
+
     //gettersetter
     public String getId() {
         return id;
