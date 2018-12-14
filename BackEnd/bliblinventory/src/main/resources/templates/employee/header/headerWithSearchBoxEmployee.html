@@ -1,8 +1,9 @@
-<script>
-    $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
-</script>
+<header th:fragment="headerWithSearchBoxEmployee" xmlns:th="http://www.w3.org/1999/xhtml">
+    <script>
+        $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
+    </script>
 
-<nav class="nav-wrapper">
+    <nav class="nav-wrapper">
         <nav>
             <div class="nav-wrapper">
                 <img class="brand-logo" id="imgLogo" src="../../images/logo2.png"/>
@@ -24,3 +25,4 @@
         <li class="divider"></li>
         <li><a href="#!">Buat Permintaan Peminjaman secara Manual</a></li>
     </ul>
+</header>
