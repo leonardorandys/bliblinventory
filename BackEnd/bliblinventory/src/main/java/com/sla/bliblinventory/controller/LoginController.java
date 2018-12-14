@@ -14,6 +14,6 @@ public class LoginController {
 
     @RequestMapping(value = "/employee", method = RequestMethod.GET)
     public String employee() {
-        return "homePageEmployee.html";
+        return "employee/homePageEmployee.html";
     }
 }

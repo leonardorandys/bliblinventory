@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="/css/employee/homePageEmployee.css"/>
     <link type="text/css" rel="stylesheet" href="/css/header.css"/>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="/employee/homePageEmployee.js"></script>
+    <script type="text/javascript" src="/JS/employee/homePageEmployee.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>Daftar Produk</title>
 
@@ -23,8 +23,8 @@
     <!-- --------------------- -->
 </head>
 <body>
-    <!-- meng-iinclude header (lewat file jquery-nya) -->
-    <header id="includeHeaderWithSearchBox"></header>
+    <!-- meng-iinclude header (pake thymeleaf) -->
+    <header th:replace="/employee/header/headerWithSearchBoxEmployee :: headerWithSearchBoxEmployee"> </header>
 
     <article>
         <div id="forSearching"> 
