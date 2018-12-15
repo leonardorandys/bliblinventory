@@ -55,59 +55,14 @@
         </div>
 
         <div class="row" id="daftarProduk">
-            <div class="col s1 s2">
+            <div class="col s1 s2" th:each = "barang: ${barang}">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/images/samsungTab.png">
+                        <img th:src="${barang.gambar}">
                     </div>
                     <div class="card-content">
-                        <p class="kodeProduk">TBL0002</p>
-                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Detail</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col s1 s2">
-                <div class="card">
-                <div class="card-image">
-                    <img src="/images/samsungTab.png">
-                </div>
-                <div class="card-content">
-                    <p class="kodeProduk">TBL0002</p>
-                    <p class="namaProduk">Samsung Galaxy Tab S3</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">Detail</a>
-                </div>
-                </div>
-            </div>
-
-            <div class="col s1 s2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="/images/samsungTab.png">
-                    </div>
-                    <div class="card-content">
-                        <p class="kodeProduk">TBL0002</p>
-                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Detail</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col s1 s2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="/images/samsungTab.png">
-                    </div>
-                    <div class="card-content">
-                        <p class="kodeProduk">TBL0002</p>
-                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
+                        <p class="kodeProduk" th:text="${barang.kode}">TBL0002</p>
+                        <p class="namaProduk" th:text="${barang.nama}">Samsung Galaxy Tab S3</p>
                     </div>
                     <div class="card-action">
                         <a href="#">Detail</a>
@@ -115,65 +70,6 @@
                 </div>
             </div>
 
-            <div class="col s1 s2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="/images/samsungTab.png">
-                    </div>
-                    <div class="card-content">
-                        <p class="kodeProduk">TBL0002</p>
-                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Detail</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col s1 s2">
-                <div class="card">
-                <div class="card-image">
-                    <img src="/images/samsungTab.png">
-                </div>
-                <div class="card-content">
-                    <p class="kodeProduk">TBL0002</p>
-                    <p class="namaProduk">Samsung Galaxy Tab S3</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">Detail</a>
-                </div>
-                </div>
-            </div>
-
-            <div class="col s1 s2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="/images/samsungTab.png">
-                    </div>
-                    <div class="card-content">
-                        <p class="kodeProduk">TBL0002</p>
-                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Detail</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col s1 s2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="/images/samsungTab.png">
-                    </div>
-                    <div class="card-content">
-                        <p class="kodeProduk">TBL0002</p>
-                        <p class="namaProduk">Samsung Galaxy Tab S3</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Detail</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </article>
 </body>
