@@ -74,5 +74,5 @@ article div#daftarProduk div.card-action{
 
 article div#daftarProduk img{
     height: 203px;
-    width: 203px;
+    width: 100%;
 }
