@@ -1,32 +1,27 @@
 $( document ).ready(function() {
   $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
   $('.sidenav').sidenav();
-  $("#includeHomePageEmployee").load("daftarProdukCard.html"); 
+  $('.datepicker').datepicker();
+  $("#includeDaftarBarangCard").load("daftarBarangCard.html"); 
   $("#includeOrderList").load("orderList.html"); 
   $("#includeManualOrder").load("buatPermintaanPeminjamanManual.html"); 
   $("#includeOrderList").hide();
   $("#includeManualOrder").hide();
   
-  $("#klikDaftarProduk").click(function(){
-    $("#includeHomePageEmployee").fadeIn();
+  $("#klikDaftarBarang").click(function(){
+    $("#includeDaftarBarangCard").fadeIn();
     $("#includeOrderList").fadeOut();
     $("#includeManualOrder").fadeOut();
   });
   
   $("#klikDaftarOrder").click(function(){
-    $("#includeHomePageEmployee").fadeOut();
+    $("#includeDaftarBarangCard").fadeOut();
     $("#includeOrderList").fadeIn();
     $("#includeManualOrder").fadeOut();
   });
-  
-  $("#klikBuatManual").click(function(){
-    $("#includeHomePageEmployee").fadeOut();
-    $("#includeOrderList").fadeOut();
-    $("#includeManualOrder").fadeIn();
-  });
 
   $("#imgLogo").click(function(){
-    $("#includeHomePageEmployee").fadeIn();
+    $("#includeDaftarBarangCard").fadeIn();
     $("#includeOrderList").fadeOut();
     $("#includeManualOrder").fadeOut();
   });

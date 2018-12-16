@@ -1,46 +1,40 @@
 $( document ).ready(function() {
   $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
   $('.sidenav').sidenav();
-  $("#includeHomePageEmployee").load("daftarProdukCard.html"); 
+  $('.datepicker').datepicker();
+  $("#includeDaftarBarangCard").load("daftarBarangCard.html"); 
   $("#includeOrderList").load("orderList.html"); 
+  $("#includeOrderListKaryawan").load("permintaanKaryawan.html"); 
   $("#includeManualOrder").load("buatPermintaanPeminjamanManual.html"); 
-  $("#includePermintaanKaryawan").load("permintaanKaryawan.html"); 
-  $("#includePermintaanKaryawan").hide();
   $("#includeOrderList").hide();
+  $("#includeOrderListKaryawan").hide();
   $("#includeManualOrder").hide();
   
-  $("#klikDaftarProduk").click(function(){
-    $("#includeHomePageEmployee").fadeIn();
+  $("#klikDaftarBarang").click(function(){
+    $("#includeDaftarBarangCard").fadeIn();
     $("#includeOrderList").fadeOut();
+    $("#includeOrderListKaryawan").fadeOut();
     $("#includeManualOrder").fadeOut();
-    $("#includePermintaanKaryawan").fadeOut();
   });
   
   $("#klikDaftarOrder").click(function(){
-    $("#includeHomePageEmployee").fadeOut();
+    $("#includeDaftarBarangCard").fadeOut();
     $("#includeOrderList").fadeIn();
+    $("#includeOrderListKaryawan").fadeOut();
     $("#includeManualOrder").fadeOut();
-    $("#includePermintaanKaryawan").fadeOut();
-  });
-  
-  $("#klikBuatManual").click(function(){
-    $("#includeHomePageEmployee").fadeOut();
-    $("#includeOrderList").fadeOut();
-    $("#includeManualOrder").fadeIn();
-    $("#includePermintaanKaryawan").fadeOut();
   });
 
-  $("#klikPermintaanKaryawan").click(function(){
-    $("#includeHomePageEmployee").fadeOut();
-    $("#includeOrderList").fadeOut();
-    $("#includeManualOrder").fadeOut();
-    $("#includePermintaanKaryawan").fadeIn();
-  });
-  
   $("#imgLogo").click(function(){
-    $("#includeHomePageEmployee").fadeIn();
+    $("#includeDaftarBarangCard").fadeIn();
     $("#includeOrderList").fadeOut();
+    $("#includeOrderListKaryawan").fadeOut();
     $("#includeManualOrder").fadeOut();
-    $("#includePermintaanKaryawan").fadeOut();
+  });
+
+  $("#klikDaftarOrderKaryawan").click(function(){
+    $("#includeDaftarBarangCard").fadeOut();
+    $("#includeOrderList").fadeOut();
+    $("#includeOrderListKaryawan").fadeIn();
+    $("#includeManualOrder").fadeOut();
   });
 });
