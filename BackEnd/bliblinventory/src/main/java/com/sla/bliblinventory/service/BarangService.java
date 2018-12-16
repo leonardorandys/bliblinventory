@@ -29,4 +29,19 @@ public class BarangService {
         };
         return template.query(sql, rm);
     }
+
+    public List<Barang> findByKode(String kode) {
+        String sql = "select * from barang where kode ='"+kode+"'";
+        RowMapper<Barang> rm = new RowMapper<Barang>() {
+            @Override
+            public Barang mapRow(ResultSet resultSet, int i) throws SQLException {
+                Barang barang = new Barang(resultSet.getString("kode"),
+                        resultSet.getString("nama"),
+                        resultSet.getString("gambar"),
+                        resultSet.getString("deskripsi"));
+                return barang;
+            }
+        };
+        return template.query(sql, rm);
+    }
 }
