@@ -1,18 +1,12 @@
-Header
-  Searchbox
-    With
-    Without
-  Navbar
-    Employee
-    Admin
-    Superior
-List Produk Card
-List Produk Table
-Detail Produk
-  Basic (Employee, Superior)
-  With Loanee List (Admin)
-Loan Order (Employee, Superior)
-Order List (Employee, Superior)
-  Wait
-  Approved
-  Declined
+List Modul Fixed
+  Home Employee
+
+List ID
+  closeDetailProdukCard
+  includeDetailProdukCard
+  includeDaftarProdukCard
+  includeManualOrder
+  includeOrderList
+
+List Class
+
